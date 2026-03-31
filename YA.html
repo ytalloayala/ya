@@ -1,3 +1,123 @@
-https://github.com/ytalloayala/ya/blob/ytalloayala-patch-1/README.md
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Exclusivo | YtalloAyala</title>
+    <style>
+        :root {
+            --primary: #00d1b2;
+            --dark: #1a1a1a;
+            --gold: #ffdd57;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--dark);
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #262626;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 1px solid #333;
+        }
+        .header h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .badge {
+            background: var(--gold);
+            color: black;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .instruction {
+            margin: 25px 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .qr-placeholder {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .qr-placeholder img {
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: var(--gold);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .btn-confirm {
+            background: var(--primary);
+            color: var(--dark);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        .btn-confirm:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+        .no-ads {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
 
-https://github.com/ytalloayala/ya/blob/ytalloayala-patch-1/README.md
+    <div class="container">
+        <div class="header">
+            <span class="badge">Acesso Restrito</span>
+            <h1>ytalloayala</h1>
+        </div>
+
+        <p class="instruction">Para liberar o acesso ao conteúdo e aos bônus em dinheiro, realize o pagamento via QR Code abaixo.</p>
+
+        <div class="qr-placeholder">
+            <!-- Substitua o link abaixo pela imagem do seu QR Code real -->
+            <img src="https://qrserver.com" alt="QR Code de Pagamento">
+        </div>
+
+        <span class="price">Valor: R$ 0,00</span>
+
+        <button class="btn-confirm" onclick="verificar()">Já realizei o pagamento</button>
+
+        <p class="no-ads">🛡️ Página 100% segura e livre de anúncios.</p>
+    </div>
+
+    <script>
+        function verificar() {
+            alert("Sua transação está em análise. O conteúdo será liberado em instantes após a confirmação do sistema.");
+        }
+    </script>
+
+</body>
+</html>
